@@ -45,10 +45,14 @@ body {
   font-size: 1.4rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: rgb(226, 225, 225);
+  background-color: whitesmoke;
 }
 
 ul,
@@ -118,13 +122,9 @@ a {
   }
 }
 
-/* @media only screen and (min-width: 1025px) {
-  html {
-    scroll-behavior: smooth;
-  }
-
+@media only screen and (min-width: 1025px) {
   .navigation-sticky {
-    background-color: rgb(226, 225, 225);
+    background-color: whitesmoke;
     position: fixed;
     width: 100%;
   }
@@ -141,5 +141,10 @@ a {
 
   .navigation-item {
     display: inline-block;
+    padding: 1vh 5vw;
   }
-} */
+
+  section {
+    border-top: 10vh solid whitesmoke;
+  }
+}

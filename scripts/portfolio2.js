@@ -12,7 +12,6 @@ const aboutMeLink = document.querySelector("a#about-link");
 const projectsLink = document.querySelector("a#projects-link");
 const contactsLink = document.querySelector("a#contacts-link");
 const navLinksArray = [aboutMeLink, projectsLink, contactsLink];
-console.log(aboutMeLink);
 
 let burgerMenuClicks = 0;
 
