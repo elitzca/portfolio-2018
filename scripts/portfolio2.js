@@ -4,39 +4,54 @@
 //console.log(is.even(42));
 
 // BURGER MENU - PHONE, TABLET
-const burgerMenuButton = document.querySelector(".navigation-logo img");
+const logo = document.querySelector("div.navigation-logo");
+const mediaQuery = window.matchMedia("(min-width:1025px)");
 const burgerMenuItemsWrapper = document.querySelector(
   ".navigation-items-wrapper"
 );
+const crossDiv = document.querySelector("div.navigation-cross");
+const topLink = document.querySelector("a#top-link");
 const aboutMeLink = document.querySelector("a#about-link");
 const projectsLink = document.querySelector("a#projects-link");
 const contactsLink = document.querySelector("a#contacts-link");
-const navLinksArray = [aboutMeLink, projectsLink, contactsLink];
+const navLinksArray = [topLink, aboutMeLink, projectsLink, contactsLink];
 
-let burgerMenuClicks = 0;
+//let burgerMenuClicks = 0; - delete if not needed;
 
-burgerMenuButton.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-  burgerMenuClicks += 1;
-  //console.log(burgerMenuClicks);
-
-  if (burgerMenuClicks % 2 == 0) {
-    //console.log("click # is even");
-    burgerMenuItemsWrapper.classList.remove("showMenu");
-    burgerMenuItemsWrapper.classList.add("hideMenu");
+//desktop size - add link to logo
+function addLinkToLogo(mediaQuery) {
+  if (mediaQuery.matches) {
+    logo.innerHTML = `<a id="top-link" href="#top"><img src="images/e-icon.png" class="logo-pic"></a>`;
   } else {
-    // console.log("click # is odd");
-    burgerMenuItemsWrapper.classList.remove("hideMenu");
-    burgerMenuItemsWrapper.classList.add("showMenu");
+    logo.innerHTML = `<img src="images/e-icon.png" class="logo-pic">`;
   }
+}
+
+addLinkToLogo(mediaQuery);
+
+mediaQuery.addListener(addLinkToLogo);
+
+//phone size
+logo.addEventListener("click", openMenu);
+
+function openMenu() {
+  burgerMenuItemsWrapper.classList.remove("hideMenu");
+  burgerMenuItemsWrapper.classList.add("showMenu");
+
+  crossDiv.classList.remove("fadeOutCross");
+  crossDiv.classList.add("fadeInCross");
+}
+
+crossDiv.addEventListener("click", closeMenu);
+
+function closeMenu() {
+  burgerMenuItemsWrapper.classList.remove("showMenu");
+  burgerMenuItemsWrapper.classList.add("hideMenu");
+
+  crossDiv.classList.remove("fadeInCross");
+  crossDiv.classList.add("fadeOutCross");
 }
 
 navLinksArray.forEach(link => {
   link.addEventListener("click", closeMenu);
 });
-
-function closeMenu() {
-  burgerMenuItemsWrapper.classList.remove("showMenu");
-  burgerMenuItemsWrapper.classList.add("hideMenu");
-}

@@ -95,7 +95,43 @@ a {
   }
 
   .navigation-item {
-    padding: 5vh 0;
+    padding: 3vh 0;
+  }
+
+  img#cross-pic {
+    max-width: 3rem;
+    opacity: 0.5;
+  }
+
+  div.navigation-cross {
+    position: fixed;
+    top: -7vh;
+    right: 3vw;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .fadeInCross {
+    animation: fadeInCross 0.5s ease 0.8s forwards;
+  }
+
+  @keyframes fadeInCross {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fadeOutCross {
+    animation: fadeOutCross 0.02s ease forwards;
+  }
+
+  @keyframes fadeOutCross {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 
   .showMenu {
@@ -139,12 +175,27 @@ a {
     right: 0;
   }
 
+  li a#top-link {
+    display: none;
+  }
+
+  div.navigation-cross {
+    display: none;
+  }
+
   .navigation-item {
     display: inline-block;
     padding: 1vh 5vw;
   }
+}
+/* OTHER */
 
-  section {
-    border-top: 10vh solid whitesmoke;
-  }
+section {
+  border-top: 10vh solid whitesmoke;
+  width: 100vw;
+}
+
+section img {
+  width: 100%;
+  max-width: 700px;
 }
