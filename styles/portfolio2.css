@@ -53,6 +53,8 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: whitesmoke;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
 }
 
 ul,
@@ -60,6 +62,66 @@ li,
 a {
   text-decoration: none;
   list-style: none;
+}
+
+section {
+  border-top: 10vh solid whitesmoke;
+  width: 88vw;
+}
+
+section img {
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  color: rgb(124, 122, 122);
+  font-weight: lighter;
+  margin: 0 0 3vh 0;
+}
+
+/* FRIEZE DESKTOP */
+
+@media only screen and (min-width: 1025px) {
+  body {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+  }
+
+  section {
+    width: 80vw;
+    margin: 0 4.5vw;
+  }
+
+  div.frieze-container {
+    background-image: url("../images/frieze-white1.jpg");
+    background-color: white; /*remove when right picture is set accordingly*/
+    background-repeat: repeat-y;
+  }
+
+  div.right-frieze {
+    position: relative;
+  }
+
+  div#frieze-container-right {
+    position: absolute;
+    width: 85%; /*change accordingly - temporary value*/
+    height: 100%;
+    right: 0;
+    background-image: url("../images/frieze-white1.jpg");
+    background-color: greenyellow; /*remove when width is set acrodingly*/
+  }
+}
+
+/* frieze tablet mode - gone */
+@media only screen and (max-width: 1024px) {
+  div.frieze-container {
+    display: none;
+  }
+
+  div.right-frieze {
+    display: none;
+  }
 }
 
 /* NAVIGATION */
@@ -162,7 +224,9 @@ a {
   .navigation-sticky {
     background-color: whitesmoke;
     position: fixed;
-    width: 100%;
+    width: 88vw;
+    z-index: 3;
+    height: 10vh;
   }
 
   .navigation-wrapper {
@@ -172,7 +236,7 @@ a {
   .navigation-items-wrapper {
     position: fixed;
     top: 0;
-    right: 0;
+    right: 5%;
   }
 
   li a#top-link {
@@ -185,17 +249,127 @@ a {
 
   .navigation-item {
     display: inline-block;
-    padding: 1vh 5vw;
+    padding: 4vh 4vw 1vh 4vw;
+    font-size: 0.8em;
+    color: black;
+  }
+
+  .navigation-item a {
+    color: rgb(104, 32, 100);
+  }
+
+  .navigation-item a:active {
+    color: rgb(110, 180, 197);
   }
 }
-/* OTHER */
 
-section {
-  border-top: 10vh solid whitesmoke;
-  width: 100vw;
+/* TOP - image, TEXT */
+
+/* phone size */
+
+#top #me-pic {
+  display: block;
+  margin: auto;
+  max-width: 30%;
+  border-radius: 100%;
+  box-shadow: 1vw 1vh 9vh rgba(0, 0, 0, 0.288);
+  margin-top: 10vh;
+  margin-bottom: 7vh;
 }
 
-section img {
-  width: 100%;
-  max-width: 700px;
+#intro {
+  font-weight: bold;
+  margin: 0 0 3vh 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.skills-top {
+  display: block;
+  max-width: 10vw;
+  margin: auto;
+}
+
+.skills-top p {
+  font-size: 0.65em;
+  color: rgb(124, 122, 122);
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+/* desktop size */
+@media only screen and (min-width: 1025px) {
+}
+
+/* ABOUT ME */
+
+/* desktop size */
+@media only screen and (min-width: 1025px) {
+  .about-div {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+    font-size: 0.8em;
+  }
+}
+
+.about-div span {
+  font-size: 0.8em;
+  color: rgb(124, 122, 122);
+}
+
+.about-div span a {
+  text-decoration: underline;
+  color: rgb(95, 95, 180);
+}
+
+/* PROJECTS SECTION*/
+.desc-r,
+.desc-l {
+  background-color: rgb(187, 112, 187);
+}
+
+/*phone size*/
+@media only screen and (max-width: 1024px) {
+  .pair-l,
+  .pair-r {
+    width: 90vw;
+    margin: 0 5vw;
+  }
+}
+
+/*desktop size*/
+@media only screen and (min-width: 1025px) {
+  .pair {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .project-pic {
+    position: relative;
+    z-index: 0;
+  }
+
+  .desc-l,
+  .desc-r {
+    position: absolute;
+    width: 35vw;
+    height: 250px;
+    top: 30px;
+  }
+
+  .desc-r {
+    right: 0;
+    animation: showDesc 1s forwards ease-out;
+  }
+
+  @keyframes showDesc {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 35vw;
+    }
+  }
 }
