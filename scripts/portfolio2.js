@@ -23,38 +23,6 @@ const navLinksArray = [
   contactsLink
 ];
 
-//deskto size - clicked link
-
-aboutMeLink.addEventListener("click", underlineAbout);
-projectsLink.addEventListener("click", underlineProjects);
-skillsLink.addEventListener("click", underlineSkills);
-contactsLink.addEventListener("click", underlineContacts);
-
-function underlineAbout() {
-  aboutMeLink.style.textDecoration = "underline aqua";
-  projectsLink.style.textDecoration = "none";
-  skills.style.textDecoration = "none";
-  contactsLink.style.textDecoration = "none";
-}
-function underlineProjects() {
-  projectsLink.style.textDecoration = "underline aqua";
-  aboutMeLink.style.textDecoration = "none";
-  skills.style.textDecoration = "none";
-  contactsLink.style.textDecoration = "none";
-}
-function underlineSkills() {
-  skillsLink.style.textDecoration = "underline aqua";
-  aboutMeLink.style.textDecoration = "none";
-  projectsLink.style.textDecoration = "none";
-  contactsLink.style.textDecoration = "none";
-}
-function underlineContacts() {
-  contactsLink.style.textDecoration = "underline aqua";
-  projectsLink.style.textDecoration = "none";
-  skillsLink.style.textDecoration = "none";
-  aboutMeLink.style.textDecoration = "none";
-}
-
 //desktop size - add link to logo
 function addLinkToLogo(mediaQuery) {
   if (mediaQuery.matches) {
