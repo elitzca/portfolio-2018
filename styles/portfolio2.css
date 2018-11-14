@@ -168,8 +168,12 @@ h1 {
 
   .navigation-logo {
     position: fixed;
-    top: 2%;
-    left: 5%;
+    top: 0.5vh;
+    left: 8vw;
+  }
+
+  #logo-pic {
+    width: 6vw;
   }
 
   .navigation-items-wrapper {
@@ -255,6 +259,11 @@ h1 {
     width: 88vw;
     z-index: 3;
     height: 10vh;
+  }
+
+  #logo-pic {
+    height: 7vh;
+    margin: 1vh 0 0 5vw;
   }
 
   .navigation-wrapper {
@@ -381,7 +390,7 @@ h1 {
 
   .group-r {
     float: right;
-    margin: 8ch 0 0 0;
+    margin: 14vh 0 0 0;
   }
   .circle {
     position: relative;
@@ -391,14 +400,13 @@ h1 {
   .circle-text {
     text-align: center;
     padding: 30px 10px;
+    visibility: hidden;
   }
 
   .desc {
     position: absolute;
     border-radius: 100%;
     background-color: aquamarine;
-    width: 80%;
-    height: 80%;
     top: 7%;
     left: 7%;
     visibility: hidden;
@@ -406,10 +414,6 @@ h1 {
 
   .desc-r {
     right: 7%;
-    width: 80%;
-    height: 80%;
-    top: 7%;
-    left: 7%;
   }
 
   .desc-text {
@@ -428,23 +432,106 @@ h1 {
     color: #757575;
   }
 
-  /*:hover show details*/
-
-  .showDetails {
-    animation: showDesc 1s forwards ease;
+  #difanation .desc {
+    background: -moz-linear-gradient(
+      70deg,
+      #8cfffd 0%,
+      #e38be1 100%
+    ); /* ff3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, #e38be1),
+      color-stop(100%, #8cfffd)
+    ); /* safari4+,chrome */
+    background: -webkit-linear-gradient(
+      70deg,
+      #8cfffd 0%,
+      #e38be1 100%
+    ); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(70deg, #8cfffd 0%, #e38be1 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(
+      70deg,
+      #8cfffd 0%,
+      #e38be1 100%
+    ); /* ie10+ */
+    background: linear-gradient(20deg, #8cfffd 0%, #e38be1 100%); /* w3c */
   }
-
+  .circle img:hover {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  .group h3 {
+    text-align: center;
+    font-weight: lighter;
+    margin: 2vh 0 0 0;
+  }
+  /* :hover show details */
+  .showDetails {
+    -webkit-animation: showDesc 0.5s forwards ease-out;
+    -moz-animation: showDesc 0.5s forwards ease-out;
+    animation: showDesc 0.5s forwards 1 ease-out;
+  }
+  .hideDetails {
+    -webkit-animation: hideDesc 0.5s forwards ease-out;
+    -moz-animation: hideDesc 0.5s forwards ease-out;
+    animation: hideDesc 0.5s forwards 1 ease-out;
+  }
+  .showText {
+    animation: textAppear 0.1s forwards linear;
+  }
   @keyframes showDesc {
     0% {
       opacity: 0;
       width: 0;
       height: 0;
+    }
+    1% {
       visibility: visible;
+      opacity: 0;
     }
     100% {
       opacity: 1;
       width: 80%;
       height: 80%;
+      visibility: visible;
+      opacity: 0.9;
+    }
+  }
+  @keyframes hideDesc {
+    0% {
+      opacity: 1;
+      width: 80%;
+      height: 80%;
+      visibility: visible;
+      opacity: 0.9;
+    }
+    99% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+  @keyframes textAppear {
+    0% {
+      opacity: 0;
+      width: 70%;
+    }
+    1% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+      width: 90%;
     }
   }
 }
