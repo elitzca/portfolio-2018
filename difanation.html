@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo4.png" />
+    <link rel="stylesheet" href="styles/portfolio2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <title>Elitsa Raycheva portfolio</title>
+  </head>
+
+  <body>
+    <div id="frieze-container-left" class="frieze-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="100%">
+        <defs>
+          <linearGradient id="lgrad" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:rgb(140,255,253);stop-opacity:1"
+            />
+            <stop
+              offset="33%"
+              style="stop-color:rgb(226,138,255);stop-opacity:1"
+            />
+            <stop
+              offset="66%"
+              style="stop-color:rgb(246,255,148);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:rgb(171,255,189);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)" />
+      </svg>
+      <div class="bubbles"></div>
+    </div>
+
+    <main id="app" class="app proj-app">
+      <nav class="navigation navigation-sticky">
+        <div class="navigation-wrapper">
+          <div class="navigation-logo ">
+            <a id="top-link" href="index.html#top"
+              ><img id="logo-pic" src="images/logo4.png" alt=""
+            /></a>
+          </div>
+
+          <div class="navigation-items-wrapper">
+            <ul class="navigation-items">
+              <li class="navigation-item">
+                <a id="top-link" href="index.html#top">Home</a>
+              </li>
+              <li class="navigation-item">
+                <a id="about-link" href="index.html#about">About me</a>
+              </li>
+              <li class="navigation-item">
+                <a
+                  id="projects-link"
+                  class="underline"
+                  href="index.html#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a id="skills-link" href="index.html#skills">Skills</a>
+              </li>
+              <li class="navigation-item">
+                <a id="contacts-link" href="index.html#contacts">Contacts</a>
+              </li>
+            </ul>
+            <div class="navigation-cross">
+              <img src="images/cross-white.png" id="cross-pic" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!---->
+      <section class="main-section">
+        <div class="proj-grid">
+          <a href="difanation.html">
+            <div class="top-proj">
+              <img src="images/dif-3.jpg" alt="" />
+              <p class="underline">Difanation</p>
+            </div>
+          </a>
+
+          <a href="illustreret.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/ill-1.jpg" alt="" />
+              <p>Illustreret Videnskab</p>
+            </div>
+          </a>
+
+          <a href="hot.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/hot.jpg" alt="" />
+              <p>Some like it Hot!</p>
+            </div>
+          </a>
+
+          <a href="foobar.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/foobar-2.jpg" alt="" />
+              <p>Foobar Dashboard</p>
+            </div>
+          </a>
+
+          <a href="list.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/list-1.jpg" alt="" />
+              <p>Student list</p>
+            </div>
+          </a>
+
+          <a href="restaurant.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/menu-4.jpg" alt="" />
+              <p>Restaurant website</p>
+            </div>
+          </a>
+        </div>
+
+        <!---->
+        <div class="content">
+          <h1 class="shadow-h1">Difanation</h1>
+          <h1 id="gr1" class="gradient-h1">Difanation</h1>
+
+          <div class="checkmarks-cont">
+            <p class="one-line">&mdash; Team project</p>
+            <p class="one-line">Mobile friendly</p>
+          </div>
+          <div class="links-cont">
+            <p class="text-link one-line">&mdash; Links:</p>
+            <a href="http://elitzca.eu/difanation/index.html" target="_blank"
+              ><p class="links one-line">Website</p></a
+            >
+            <a href="http://elitzca.eu/reports/Difanation.pdf" target="_blank"
+              ><p class="links one-line">Full report</p></a
+            >
+          </div>
+
+          <p class="long-desc">
+            In this project we had to find an artist and build a digital
+            campaign for them and their art. For this purpose we chose a
+            portrait photographer from Portugal called Daniel Filipe. He was
+            doing photo shoots for models and he was seeing himself as a
+            professional fashion photographer in the future. His photographs
+            have a static style, giving the feeling as if the object has frozen
+            in time. Despite his talent behind the camera, Daniel was struggling
+            with reaching potential customers and turning his passion into a
+            job. Our 3 week cooperation work resulted in the creation of visual
+            identity, marketing and social media strategy and business model for
+            Daniel’s brand as well as a professional website.
+          </p>
+
+          <video
+            width="1000"
+            controls
+            preload="auto"
+            poster="projects/Difanation/cover.JPG"
+          >
+            <source
+              src="projects/Difanation/video_final1.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML5 video.
+          </video>
+
+          <div class="dif-grid">
+            <div>
+              <img
+                class="dont-circle"
+                src="projects/Difanation/img17-1000xlogo.jpg"
+                alt=""
+              />
+              <img class="dont-circle" src="projects/Difanation/logo.JPG" />
+            </div>
+
+            <div>
+              <img class="dont-circle" src="projects/Difanation/logo.JPG" />
+              <img
+                class="dont-circle"
+                src="projects/Difanation/img2x1000xlogo.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <p class="small-letter">
+            * All projects were given to us from KEA and are with educational
+            purposes only.
+          </p>
+
+          <!---->
+        </div>
+      </section>
+    </main>
+    <!---->
+    <div id="frieze-container-right" class="frieze-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="100%">
+        <defs>
+          <linearGradient id="lgrad" x1="51%" y1="0%" x2="49%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:rgb(140,255,253);stop-opacity:1"
+            />
+            <stop
+              offset="33%"
+              style="stop-color:rgb(226,138,255);stop-opacity:1"
+            />
+            <stop
+              offset="66%"
+              style="stop-color:rgb(246,255,148);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:rgb(171,255,189);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)" />
+      </svg>
+      <div class="bubbles"></div>
+    </div>
+
+    <!-- <script src="scripts/portfolio2.js"></script> -->
+  </body>
+  <script src="scripts/projects.js"></script>
+</html>

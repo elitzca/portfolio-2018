@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo4.png" />
+    <link rel="stylesheet" href="styles/portfolio2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <title>Elitsa Raycheva web portfolio</title>
+  </head>
+
+  <body>
+    <!--
+      all the code for gradients is taken from http://angrytools.com/gradient/
+    -->
+
+    <div id="frieze-container-left" class="frieze-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="100%">
+        <defs>
+          <linearGradient id="lgrad" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:rgb(140,255,253);stop-opacity:1"
+            />
+            <stop
+              offset="33%"
+              style="stop-color:rgb(226,138,255);stop-opacity:1"
+            />
+            <stop
+              offset="66%"
+              style="stop-color:rgb(246,255,148);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:rgb(171,255,189);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)" />
+      </svg>
+      <div class="bubbles"></div>
+    </div>
+
+    <main id="app" class="app">
+      <nav class="navigation navigation-sticky">
+        <div class="navigation-wrapper">
+          <div class="navigation-logo">
+            <a id="top-link" href="index.html#top"
+              ><img id="logo-pic" src="images/logo4.png" alt=""
+            /></a>
+          </div>
+
+          <div class="navigation-items-wrapper">
+            <ul class="navigation-items">
+              <li class="navigation-item">
+                <a id="top-link" href="#top">Home</a>
+              </li>
+              <li class="navigation-item">
+                <a id="about-link" href="#about">About me</a>
+              </li>
+              <li class="navigation-item">
+                <a id="projects-link" href="#projects">Projects</a>
+              </li>
+              <li class="navigation-item">
+                <a id="skills-link" href="#skills">Skills</a>
+              </li>
+              <li class="navigation-item">
+                <a id="contacts-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+            <div class="navigation-cross">
+              <img src="images/cross-white.png" id="cross-pic" />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section id="top">
+        <img id="me-pic" src="images/me_big.jpg" alt="" />
+        <p id="intro">Hi! I am Elitsa and I am a Multimedia design student.</p>
+        <div class="skills-top">
+          <p>&mdash; HTML, CSS, JS</p>
+          <p>&mdash; UX, UI</p>
+          <p>&mdash; Git</p>
+          <p>&mdash; Photoshop</p>
+          <p>&mdash; Illustrator</p>
+        </div>
+      </section>
+
+      <section id="about">
+        <h1>&mdash; About me</h1>
+        <div class="about-div">
+          <p>
+            I am passionate about creating web apps and bringing your ideas to
+            life. As a developer I am enthusiastic and devoted. In my free time
+            I like to play around with JS, explore new libraries or read about
+            latest news in the tech world. While I have an eye for design and
+            coming up trends I prefer to stay focused on the technical part and
+            work with already established design and visual identity.
+          </p>
+          <p>
+            In my not so long experience I have got in touch with some of the
+            most popular tools and libraries such as Git, Node.js, React etc
+            <span>/see the full list under “<a href="#skills">Skills</a>”/</span
+            >. And I am willing to dive deeper into them, learn about completely
+            new ones and acquire some awesome skills which will help me achieve
+            the “Wow!” effect. I like to push myself to the limit because I
+            believe hard-work always pays off!
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>&mdash; Projects</h1>
+
+        <div class="projects-grid">
+          <!---->
+          <section class="left-column">
+            <!---->
+            <div class="group group-l" id="difanation">
+              <div class="circle">
+                <img src="images/dif-3.jpg" alt="" />
+                <div class="desc desc-l ">
+                  <p class="desc-text">
+                    A portfolio website developed to fulfill the needs of
+                    Portuguese photographer Daniel Filipe.
+                  </p>
+                  <div class="read-more-div">
+                    <a href="difanation.html"><p>Read more</p></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Difanation</h3>
+            </div>
+            <!---->
+            <div class="group group-l" id="some-hot">
+              <div class="circle">
+                <img src="images/hot.jpg" alt="" />
+                <div class="desc desc-l ">
+                  <p class="desc-text">
+                    An interactive trailer of the 1959 movie with Merilyn
+                    Monroe, created with the goal to make teenagers 15-17 years
+                    become interested in watching the movie.
+                  </p>
+                  <div class="read-more-div">
+                    <a href="hot.html"><p>Read more</p></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Some like it Hot!</h3>
+            </div>
+            <!---->
+            <div class="group group-l" id="stud-list">
+              <div class="circle">
+                <img src="images/list-1.jpg" alt="" />
+                <div class="desc desc-l ">
+                  <p class="desc-text">
+                    JSON loaded list of students, that the user can sort by
+                    either first or last name, select students to display
+                    details on, and delete students from the list.
+                  </p>
+                  <div class="read-more-div">
+                    <a href="list.html"><p>Read more</p></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Student list</h3>
+            </div>
+            <!---->
+          </section>
+          <!---->
+          <section class="right-column">
+            <!---->
+            <div class="group group-r" id="ill-vid">
+              <div class="circle">
+                <img src="images/ill-1.jpg" alt="" />
+                <div class="desc desc-r">
+                  <p class="desc-text">
+                    A redesign project of the mobile version of the magazine
+                    with improved design and better user experience.
+                  </p>
+                  <div class="read-more-div">
+                    <a href="illustreret.html"><p>Read more</p></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Illustreret Videnskab</h3>
+            </div>
+            <!---->
+            <div class="group group-r" id="foobar">
+              <div class="circle">
+                <img src="images/foobar-2.jpg" alt="" />
+                <div class="desc desc-r">
+                  <p class="desc-text">
+                    A dashboard created to help the manager of a bar monitor the
+                    work of their employees and storage of goods.
+                  </p>
+                  <div class="read-more-div">
+                    <a href="foobar.html"><p>Read more</p></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Foobar Dashboard</h3>
+            </div>
+            <!---->
+            <div class="group group-r" id="rest-menu">
+              <div class="circle">
+                <img src="images/menu-4.jpg" alt="" />
+                <div class="desc desc-r">
+                  <p class="desc-text">
+                    A dynamic website for the imaginary restaurant Petrograd.
+                  </p>
+                  <div class="read-more-div">
+                    <a href="restaurant.html"><p>Read more</p></a>
+                  </div>
+                </div>
+              </div>
+              <h3>Restaurant website</h3>
+            </div>
+            <!---->
+          </section>
+          <!---->
+        </div>
+      </section>
+
+      <section id="skills">
+        <h1>&mdash; Skills</h1>
+
+        <div class="know">
+          <div class="good-know">
+            <h3>Good knowledge</h3>
+            <div class="good-2col">
+              <div class="col1">
+                <p>HTML, CSS, JavaScript</p>
+                <p>Command line, Git</p>
+                <p>Testing, debugging</p>
+                <p>Developer tools</p>
+                <p>Github</p>
+                <p>JSON</p>
+              </div>
+              <div class="col2">
+                <p>Responsive design</p>
+                <p>SoMe strategy</p>
+                <p>Photoshop</p>
+                <p>Illustrator</p>
+                <p>UX, UI</p>
+              </div>
+            </div>
+          </div>
+          <div class="basic-know">
+            <h3>Basic knowledge</h3>
+            <div class="col3">
+              <p>Greensock.js</p>
+              <p>Wordpress</p>
+              <p>React.js</p>
+              <p>SASS</p>
+              <p>SEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts">
+        <h1>&mdash; Contacts</h1>
+
+        <div class="contacts-cont">
+          <div class="special-pair">
+            <img class="icon" src="images/icons/gmail1.png" alt="" />
+            <p class="contact">elitzcatr@gmail.com</p>
+          </div>
+
+          <div class="icon-text">
+            <a
+              href="https://www.linkedin.com/in/elitsa-raycheva-4300bb150/"
+              target="_blank"
+            >
+              <img class="icon" src="images/icons/linked-in1.png" alt="" />
+              <p class="contact">Elitsa Raycheva</p></a
+            >
+          </div>
+
+          <div class="icon-text">
+            <a href="https://github.com/elitzca" target="_blank">
+              <img class="icon" src="images/icons/github1.png" alt="" />
+              <p class="contact">elitzca</p></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <p>&copy; 2018 Elitsa Raycheva. All rights reserved.</p>
+      </section>
+    </main>
+
+    <div id="frieze-container-right" class="frieze-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="100%">
+        <defs>
+          <linearGradient id="lgrad" x1="51%" y1="0%" x2="49%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:rgb(140,255,253);stop-opacity:1"
+            />
+            <stop
+              offset="33%"
+              style="stop-color:rgb(226,138,255);stop-opacity:1"
+            />
+            <stop
+              offset="66%"
+              style="stop-color:rgb(246,255,148);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:rgb(171,255,189);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)" />
+      </svg>
+      <div class="bubbles"></div>
+    </div>
+
+    <script src="scripts/portfolio2.js"></script>
+  </body>
+</html>

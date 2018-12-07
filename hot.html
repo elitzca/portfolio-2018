@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/logo4.png" />
+    <link rel="stylesheet" href="styles/portfolio2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <title>Elitsa Raycheva web portfolio</title>
+  </head>
+
+  <body>
+    <div id="frieze-container-left" class="frieze-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="100%">
+        <defs>
+          <linearGradient id="lgrad" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:rgb(140,255,253);stop-opacity:1"
+            />
+            <stop
+              offset="33%"
+              style="stop-color:rgb(226,138,255);stop-opacity:1"
+            />
+            <stop
+              offset="66%"
+              style="stop-color:rgb(246,255,148);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:rgb(171,255,189);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)" />
+      </svg>
+      <div class="bubbles"></div>
+    </div>
+
+    <main id="app" class="app proj-app">
+      <nav class="navigation navigation-sticky">
+        <div class="navigation-wrapper">
+          <div class="navigation-logo ">
+            <a id="top-link" href="index.html#top"
+              ><img id="logo-pic" src="images/logo4.png" alt=""
+            /></a>
+          </div>
+
+          <div class="navigation-items-wrapper">
+            <ul class="navigation-items">
+              <li class="navigation-item">
+                <a id="top-link" href="index.html#top">Home</a>
+              </li>
+              <li class="navigation-item">
+                <a id="about-link" href="index.html#about">About me</a>
+              </li>
+              <li class="navigation-item">
+                <a
+                  id="projects-link"
+                  class="underline"
+                  href="index.html#projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a id="skills-link" href="index.html#skills">Skills</a>
+              </li>
+              <li class="navigation-item">
+                <a id="contacts-link" href="index.html#contacts">Contacts</a>
+              </li>
+            </ul>
+            <div class="navigation-cross">
+              <img src="images/cross-white.png" id="cross-pic" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!---->
+      <section class="main-section">
+        <div class="proj-grid">
+          <a href="difanation.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/dif-3.jpg" alt="" />
+              <p>Difanation</p>
+            </div>
+          </a>
+
+          <a href="illustreret.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/ill-1.jpg" alt="" />
+              <p>Illustreret Videnskab</p>
+            </div>
+          </a>
+
+          <a href="hot.html">
+            <div class="top-proj">
+              <img class="glow" src="images/hot.jpg" alt="" />
+              <p class="underline">Some like it Hot!</p>
+            </div>
+          </a>
+
+          <a href="foobar.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/foobar-2.jpg" alt="" />
+              <p>Foobar Dashboard</p>
+            </div>
+          </a>
+
+          <a href="list.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/list-1.jpg" alt="" />
+              <p>Student list</p>
+            </div>
+          </a>
+
+          <a href="restaurant.html">
+            <div class="top-proj">
+              <img class="grayscale" src="images/menu-4.jpg" alt="" />
+              <p>Restaurant website</p>
+            </div>
+          </a>
+        </div>
+
+        <!---->
+        <div class="content">
+          <h1 class="shadow-h1">Some like it Hot!</h1>
+          <h1 id="gr3" class="gradient-h1">Some like it Hot!</h1>
+
+          <div class="checkmarks-cont">
+            <p class="one-line">&mdash; Team project</p>
+            <p class="one-line">Desktop ONLY</p>
+          </div>
+          <div class="links-cont">
+            <p class="text-link one-line">&mdash; Links:</p>
+            <a
+              href="http://elitzca.eu/kea/02-animation/interactive-trailer/scenetest.html"
+              target="_blank"
+              ><p class="links one-line">Website</p></a
+            >
+          </div>
+          <div class="imp-info">
+            <p class="one-line">
+              &mdash; Important! The code is broken. So in order for it to play
+              normally, open the link, press the play button under the scene and
+              don't do anything until the "You lost" scene shows up. Then press
+              the "restart" button and follow the instructions on the screen! (:
+            </p>
+            <p class="one-line">
+              &mdash; Otherwise there is a video of the winning scenario at the
+              bottom of the page.
+            </p>
+          </div>
+
+          <p class="long-desc">
+            For this project we worked as a team of 6 and our task was to create
+            an interactive trailer of the movie “Some like it hot”. The purpose
+            of this trailer/game was to engage young people aged 15 – 18 years
+            and bring their interest to the movie. We decided to stick to the
+            idea of the movie but with an interesting twist, leaving the ending
+            of the story in the hands and skills of our users. Creating an
+            exciting, but also hard to win game challenged us as well as our
+            users, who felt even more tempted to try the game again and win and
+            hopefully watch the movie itself.
+          </p>
+
+          <img
+            id="films"
+            class="dont-circle"
+            src="projects/hot/movie-medium-1300x2388.jpg"
+            alt=""
+          />
+
+          <div class="trailer">
+            <img class="dont-circle" src="projects/hot/scene.jpg" alt="" />
+            <video
+              width="1000"
+              controls
+              preload="auto"
+              poster="projects/hot/hot-cover.JPG"
+            >
+              <source src="projects/hot/hot.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+
+          <p class="small-letter">
+            * All projects were given to us from KEA and are with educational
+            purposes only.
+          </p>
+          <!---->
+        </div>
+      </section>
+    </main>
+    <!---->
+    <div id="frieze-container-right" class="frieze-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="5vw" height="100%">
+        <defs>
+          <linearGradient id="lgrad" x1="51%" y1="0%" x2="49%" y2="100%">
+            <stop
+              offset="0%"
+              style="stop-color:rgb(140,255,253);stop-opacity:1"
+            />
+            <stop
+              offset="33%"
+              style="stop-color:rgb(226,138,255);stop-opacity:1"
+            />
+            <stop
+              offset="66%"
+              style="stop-color:rgb(246,255,148);stop-opacity:1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color:rgb(171,255,189);stop-opacity:1"
+            />
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#lgrad)" />
+      </svg>
+      <div class="bubbles"></div>
+    </div>
+
+    <!-- <script src="scripts/portfolio2.js"></script> -->
+  </body>
+  <script src="scripts/projects.js"></script>
+</html>
